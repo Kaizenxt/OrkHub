@@ -4,7 +4,11 @@
             "id": "n42YLwaqJIPYhotZ9uBHt87VceMwWQpzmdEt2TNXIorIFG",
             "nickname": "kaizenxt",
             "email": "kaizenxt1307@gmail.com",
-            "password": "ronaldo6769"
+            "password": "ronaldo6769",
+            "bio": "",
+            "city": "",
+            "relationship": "",
+            "friends": ""
         }
     ]
 }

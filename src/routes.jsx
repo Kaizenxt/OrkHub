@@ -1,11 +1,12 @@
 import { createBrowserRoute } from 'react-router-dom'
+import { Error } from './pages/Error'
 
 export const router = createBrowserRoute([
     {
         path: '/',
         children: [
             { path: '/login', element: <Login /> },
-            { path: '/singUp', element: <SingUp /> } 
+            { path: '/singUp', element: <SingUp /> }
         ]
     },
     {

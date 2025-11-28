@@ -1,10 +1,11 @@
+import { RouterProvider } from 'react-router-dom'
 import './App.css'
+import { router } from './routes'
 
 export function App() {
   return (
     <>
-      <h1>Allahu akbar</h1>
+      <RouterProvider router={router} />
     </>
   )
-
-}
+};
