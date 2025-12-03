@@ -31,7 +31,7 @@ export function Profile() {
                         />
                         <h2>ronaldo da Silva</h2>
                         <InfoText>Desenvolvedor Frontend</InfoText>
-                        <InfoText>Pintopolis - Brasil</InfoText>
+                        <InfoText>Rio de Janeiro - Brasil</InfoText>
                     </Box>
 
                     <Box>
