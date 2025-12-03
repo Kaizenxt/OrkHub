@@ -1,21 +1,21 @@
 import { createBrowserRoute } from 'react-router-dom'
 import { Error } from './pages/Error'
+import { Login } from './pages/Login'
+import { Home } from './pages/Home'
+import { Perfil } from './pages/Perfil'
 
 export const router = createBrowserRoute([
     {
-        path: '/',
-        children: [
-            { path: '/login', element: <Login /> },
-            { path: '/singUp', element: <SingUp /> }
-        ]
+        path: '/login',
+        element: <Login />
     },
     {
-        path: '/',
-        element: <PrivateRoute />, //Aqui ele vai exigir autenticação
-        children: [
-            { path: '/home', element: <Home /> },
-            { path: '/about', element: <About /> },
-        ]
+        path: '/home',
+        element: <Home />
+    },
+    {
+        path: '/perfil',
+        element: <Perfil />
     },
     {
         path: '*',

@@ -1,8 +1,8 @@
 import ç from "styled-components"
 
 export const Container = ç.div`
-    color: #ff00aa;
-    background-color: #f04089;
+    color: #f0c;
+    background-color: #f0c;
 
     height: 100vh;
     width: 100vw;
