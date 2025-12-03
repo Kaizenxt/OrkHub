@@ -64,8 +64,7 @@ export const InputGroup = styled.div`
   }
 `;
 
-/* ---- Botão estilo Orkut ---- */
-export const OrkutButton = styled.button`
+export const Button = styled.button`
   background: #ff5db1;
   color: white;
   font-family: "Trebuchet MS", Arial, sans-serif;

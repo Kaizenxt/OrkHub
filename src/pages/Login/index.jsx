@@ -5,7 +5,7 @@ import {
   LoginContainer,
   InputGroup,
   Title,
-  OrkutButton
+  Button
 } from "./styled";
 
 export function Login() {
@@ -49,7 +49,7 @@ export function Login() {
           />
         </InputGroup>
 
-        <OrkutButton onClick={handleClick}>Login</OrkutButton>
+        <Button onClick={handleClick}>Login</Button>
       </LoginContainer>
     </Container>
   );
