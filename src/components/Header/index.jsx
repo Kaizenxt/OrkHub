@@ -21,7 +21,6 @@ export function Header() {
         <Container>
             <LogoContainer>
                 <img src={Logo} alt="OrkHub.svg" />
-                <h1>Orkhub</h1>
             </LogoContainer>
             <NavContainer>
                 <LinksNavigation onClick={handleHomeClick}>Home</LinksNavigation>

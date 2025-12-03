@@ -23,6 +23,7 @@ export const Container = styled.div`
 `
 
 export const LogoContainer = styled.div`
+    padding-left: 200px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -30,22 +31,17 @@ export const LogoContainer = styled.div`
 
     img {
         height: 70px;
-        width: 70px;
+        width: 300px;
     }
 `
 
 export const NavContainer = styled.div`
+    padding-right: 200px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 50px;
 
-    :last-child {
-        &:hover{
-            background-color: rgba(255, 176, 176, 0.4);
-        }
-    }
-    
 `
 
 export const LinksNavigation = styled.a`
