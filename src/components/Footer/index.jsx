@@ -44,7 +44,7 @@ export function Footer(){
             />
           </a>
           <a 
-            href="https://discord.gg/UXxbbe3Q94"
+            href="https://discord.com/invite/3Ma3rEaPcH"
             target="_blank"
             rel="noopener noreferrer"
           >
