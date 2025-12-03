@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Container, LoginContainer } from "./styled";
-import { Button } from "../../components/Button";
+import {
+  Container,
+  LoginContainer,
+  InputGroup,
+  Title,
+  OrkutButton
+} from "./styled";
 
 export function Login() {
   const [username, setUsername] = useState("");
@@ -14,16 +19,16 @@ export function Login() {
       alert("Insira username e senha válidos!");
       return;
     }
-
     navigate("/home");
   }
 
   return (
     <Container>
       <LoginContainer>
-        <h1>Acesse a plataforma</h1>
+        <Title>Acesse a plataforma</Title>
 
-        <div>
+        <InputGroup>
+          <label htmlFor="name">Email</label>
           <input
             id="name"
             type="email"
@@ -31,9 +36,10 @@ export function Login() {
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
-        </div>
+        </InputGroup>
 
-        <div>
+        <InputGroup>
+          <label htmlFor="password">Senha</label>
           <input
             id="password"
             type="password"
@@ -41,9 +47,9 @@ export function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-        </div>
+        </InputGroup>
 
-        <Button handleClick={handleClick}>Login</Button>
+        <OrkutButton onClick={handleClick}>Login</OrkutButton>
       </LoginContainer>
     </Container>
   );
