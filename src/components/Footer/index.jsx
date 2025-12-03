@@ -1,54 +1,60 @@
 import { 
-    Col, 
-    Container, 
-    Row 
-
+  Container, 
+  Row, 
+  Col,
+  Heart 
 } from "./styled"
-
 import {
-    GithubLogoIcon, 
-    LinkedinLogoIcon, 
-    WhatsappLogoIcon
+  GithubLogoIcon, 
+  DiscordLogoIcon, 
+  WhatsappLogoIcon,
+  Heart as HeartIcon
 } from "@phosphor-icons/react"
 
 export function Footer(){
-    return(
-        <Container>
-            <Row>
-                <Col>
-                    © 2025 ronaldo, all rights reserved.
-                </Col>
-                <Col>
-                    <a 
-                        href="https://wa.me/5522999998951?text=oi,+manda+foto+da+torre+infernal" 
-                        target="_blank" 
-                    >
-                        <WhatsappLogoIcon 
-                            size={32} 
-                            className="icon iconWPP"
-                        />
-                    </a>
-                    <a 
-                        href="https://www.github.com/ronaldo"
-                        target="_blank"
-                    >
-                        <GithubLogo 
-                            size={32} 
-                            className="icon iconGHB"
-                        />
-                    </a>
-                    <a 
-                        href="https://www.linkedin.com/in/ronaldo"
-                        target="_blank"
-                    >
-                        <LinkedinLogo 
-                            size={32} 
-                            className="icon iconLKDN"
-                        />
-                    </a>
-
-                </Col>
-            </Row>
-        </Container>
-    )
+  return(
+    <Container>
+      <Heart>
+        <HeartIcon size={28} weight="fill" />
+      </Heart>
+      
+      <Row>
+        <Col>
+          © 2025 <strong>ronaldo</strong>, all rights reserved.
+        </Col>
+        <Col>
+          <a 
+            href="https://wa.me/5522999998951?text=oi,+manda+foto+da+torre+infernal" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <WhatsappLogoIcon 
+              size={26} 
+              className="icon iconWPP"
+            />
+          </a>
+          <a 
+            href="https://github.com/Kaizenxt/OrkHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GithubLogoIcon 
+              size={26} 
+              className="icon iconGHB"
+            />
+          </a>
+          <a 
+            href="https://discord.gg/UXxbbe3Q94"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <DiscordLogoIcon
+              size={26} 
+              className="icon iconDC"
+            />
+          </a>
+        </Col>
+      </Row>
+    </Container>
+  )
 }

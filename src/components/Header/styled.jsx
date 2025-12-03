@@ -23,7 +23,7 @@ export const Container = styled.div`
 `
 
 export const LogoContainer = styled.div`
-    padding-left: 200px;
+    padding-left: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
